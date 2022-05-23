@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica con gitflow</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <h1>Practica gitflow</h1>
+    <nav>
+        <ul>
+             <li><a href="hoja.html">Desarrollo</a></li>
+             <li><a href="practica.html">Practica</a></li>
+             <li><a href="info.html">Usuario</a></li>
+             
+        </ul>
+    </nav>
+    <div class="info">
+        <div class="art">
+            <div class="secc">
+                <br>
+<div>
+    <h2 class="centrado">What is Gitflow? </h2><br>
+<p>Gitflow is an alternative Git branching model that uses function branches and multiple parent branches. It was Vincent Driessen at nvie who first published it and who popularized it. Compared to trunk-based development, Gitflow has multiple longer-lived branches and higher commits. Under this model, developers create a feature branch and delay merging it with the main trunk branch until the feature is complete. These long-standing function branches require more collaboration for fusion and are at higher risk of deviating from the trunk branch. They can also introduce conflicting updates. </p>
+</div><br>
+<div><img src="img/gitflow1.png"></div><br>
+<div>
+<h2 class="centrado">Main and development branches </h2><br>
+<p>Instead of a single main branch, this workflow uses two branches to record project history. The main branch stores the official release history and the develop branch serves as the integration branch for features. Also, it's a good idea to tag all commits in the main branch with a version number. </p>
+</div>  <br><br>
+        <div> <h2 class="centrado">Function branches </h2><br>
+         <p>All new features must reside in their own branch, which can be pushed to the central repository for backup/collaboration. However, instead of branching from main, feature branches use the develop branch as their parent branch. When a feature is finished, it is merged back into develop. Functions should never interact directly with main. </p></div>
+         
+        <br><br>
+        <div> <h2 class="centrado">Publication branches </h2><br>
+         <p>When develop has acquired enough features for a release (or a predetermined release date approaches), you should fork a release branch from develop. </p></div>
+        
+         <br><br>
+        <div> <h2 class="centrado">Correction branches </h2><br>
+         <p>Maintenance, fix, or hotfix branches are used to quickly fix production releases. Hotfix branches are very similar to release and feature branches, except that they are based on the main branch and not the develop branch. </p></div>
+         <br><br>
+        
+         
+        
+</div>
+
+        </div>
+    </div>
+</body>
+</html>
